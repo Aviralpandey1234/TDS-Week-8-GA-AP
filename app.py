@@ -1,8 +1,13 @@
 import streamlit as st
-def divNum(a,b):#function definision
-  return a/b
-num1=int(input("Please input the number for num1: "));
-#Ask and reading the input from user for num1
-num2=int(input("Please input the number for num2: "));
-#Ask and reading the input from user for num2
-print("Division of given numbers is:",divNum(num1,num2))
+
+string = "Division Of Two Numbers"
+st.set_page_config(page_title=string, page_icon="➗")
+
+
+st.title('Division Of Two Numbers')
+a = st.number_input('Enter a number')
+b = st.number_input('Enter another number')
+if b!=0:
+    st.write("Result is " + str(a/b))
+else:
+    st.write("Cant Divide by Zero" )
