@@ -1,3 +1,4 @@
+import streamlit as st
 def divNum(a,b):#function definision
   return a/b
 num1=int(input("Please input the number for num1: "));
